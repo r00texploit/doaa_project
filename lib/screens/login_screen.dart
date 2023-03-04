@@ -41,12 +41,12 @@ class InitState extends State<LoginScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Container(
-                  margin: const EdgeInsets.only(top: 50),
-                  child: Image.asset(
-                    "assets/image/user.png",
-                  ),
-                ),
+                // Container(
+                //   margin: const EdgeInsets.only(top: 50),
+                //   child: Image.asset(
+                //     "assets/image/user.png",
+                //   ),
+                // ),
                 Container(
                   margin: const EdgeInsets.only(right: 20, top: 20),
                   alignment: Alignment.bottomRight,

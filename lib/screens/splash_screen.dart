@@ -53,12 +53,12 @@ builder: (context) => LoginScreen(),
 
           ),
           
-          Center(
-            child: Container(
-              child: const Image(image: NetworkImage('https://www.seekpng.com/png/detail/163-1634804_clipart-colorful-camera-shutter-png.png'),)
-            )
+          // Center(
+          //   child: Container(
+          //     child: const Image(image: NetworkImage('https://www.seekpng.com/png/detail/163-1634804_clipart-colorful-camera-shutter-png.png'),)
+          //   )
           
-          )
+          // )
         ],
       ),
     );

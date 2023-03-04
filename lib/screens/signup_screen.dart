@@ -41,14 +41,14 @@ class InitState extends State<SignUpScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Container(
-                margin: const EdgeInsets.only(top: 50),
-                child: Image.asset(
-                  "images/app_logo.png",
-                  height: 90,
-                  width: 90,
-                ),
-              ),
+              // Container(
+              //   margin: const EdgeInsets.only(top: 50),
+              //   child: Image.asset(
+              //     "images/app_logo.png",
+              //     height: 90,
+              //     width: 90,
+              //   ),
+              // ),
               Container(
                 margin: const EdgeInsets.only(right: 20, top: 20),
                 alignment: Alignment.bottomRight,
