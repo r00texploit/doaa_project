@@ -11,12 +11,12 @@ class HomeAppBer extends StatelessWidget {
       child: Row(
         // mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          IconButton(
-              onPressed: () {
-                // GlobalKey<Drawer>? drawer = GlobalKey();
-                // buildDrawer(context);
-              },
-              icon: Icon(Icons.sort)),
+          // IconButton(
+          //     onPressed: () {
+          //       // GlobalKey<Drawer>? drawer = GlobalKey();
+          //       // buildDrawer(context);
+          //     },
+          //     icon: Icon(Icons.sort)),
           // const Icon(
           //   Icons.sort,
           //   size: 30,
@@ -27,7 +27,7 @@ class HomeAppBer extends StatelessWidget {
               left: 20,
             ),
             child: Text(
-              "ERCHAD",
+              "Guidance",
               style: TextStyle(
                 fontSize: 23,
                 fontWeight: FontWeight.bold,
@@ -36,7 +36,7 @@ class HomeAppBer extends StatelessWidget {
             ),
           ),
           SizedBox(
-            width: 122,
+            width: 180,
           ),
           IconButton(
               onPressed: () {

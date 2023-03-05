@@ -26,7 +26,7 @@ class ProductPoster extends StatelessWidget {
             width: size!.width * 0.7,
             decoration: const BoxDecoration(
               color: Colors.white,
-              shape: BoxShape.circle,
+              // shape: BoxShape.circle,
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(50),
                 bottomRight: Radius.circular(50),

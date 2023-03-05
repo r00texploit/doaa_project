@@ -245,7 +245,7 @@ class ItemsUser extends StatelessWidget {
                     padding: const EdgeInsets.only(bottom: 8),
                     alignment: Alignment.centerLeft,
                     child: const Text(
-                      "twahod",
+                      "Autism",
                       style: TextStyle(
                         fontSize: 18,
                         color: Color(0xff4ac53a5),
@@ -285,9 +285,9 @@ class ItemsUser extends StatelessWidget {
                     padding: const EdgeInsets.only(bottom: 8),
                     alignment: Alignment.centerLeft,
                     child: const Text(
-                      "PTSD",
+                      "Down's syndrome",
                       style: TextStyle(
-                        fontSize: 18,
+                        fontSize: 17,
                         color: Color(0xff4ac53a5),
                         fontWeight: FontWeight.bold,
                       ),
@@ -400,13 +400,11 @@ class UserHome extends StatelessWidget {
       children: [
         HomeAppBer(),
         Container(
-          padding: const EdgeInsets.only(top: 15),
+          margin: const EdgeInsets.only(top: 30),
           decoration: const BoxDecoration(
-              color: Color(0xFFEDECF2),
+              color: kBackgroundColor,
               borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(35),
-                topRight: Radius.circular(35),
-              )),
+                  topLeft: Radius.circular(40), topRight: Radius.circular(40))),
           child: Column(children: [
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 15),

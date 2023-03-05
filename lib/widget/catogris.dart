@@ -167,7 +167,7 @@ class PrivateTrainer extends StatelessWidget {
                     padding: const EdgeInsets.only(bottom: 8),
                     alignment: Alignment.centerLeft,
                     child: const Text(
-                      "twahod",
+                      "Autism",
                       style: TextStyle(
                         fontSize: 18,
                         color: Color(0xff4ac53a5),

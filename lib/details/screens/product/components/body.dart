@@ -21,7 +21,7 @@ class Body extends StatelessWidget {
       backgroundColor: kPrimaryColor,
       elevation: 0,
       centerTitle: false,
-      title: Text('User'),
+      title: Text('Center'),
       actions: <Widget>[
         IconButton(
           icon: Icon(Icons

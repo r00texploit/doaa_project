@@ -137,7 +137,7 @@ class Erchad extends StatelessWidget {
                                   padding: const EdgeInsets.only(bottom: 8),
                                   alignment: Alignment.centerLeft,
                                   child: const Text(
-                                    "PTSD",
+                                    "Down's syndrome",
                                     style: TextStyle(
                                       fontSize: 18,
                                       color: Color(0xff4ac53a5),
