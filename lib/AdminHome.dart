@@ -179,7 +179,8 @@ class _ChatScreenState extends State<ChatScreen1> {
                       log("message:$uid");
                       FirebaseFirestore.instance.collection("fliter")
                       .doc(widget.uid)
-                      .set({
+                      .collection("user")
+                      .add({
                         'user1': _auth.currentUser!.uid,
                         'user2': widget.uid
                       });
