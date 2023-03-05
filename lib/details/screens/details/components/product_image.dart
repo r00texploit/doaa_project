@@ -34,9 +34,9 @@ class ProductPoster extends StatelessWidget {
             ),
           ),
           // showAboutDialog(context: context),
-          Image.asset(
-            "assets/image/avatar-1.png",
-            // image!,
+          Image.network(
+            // "assets/image/avatar-1.png",
+            image!,
             height: size!.width * 0.75,
             width: size!.width * 0.75,
             fit: BoxFit.cover,

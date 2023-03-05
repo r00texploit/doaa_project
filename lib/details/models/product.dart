@@ -13,6 +13,7 @@ class Product {
     loc = data["location"];
     department = data["department"];
     price = data["price"];
+    image = data["image"];
   }
 }
 

@@ -35,7 +35,7 @@ class Art extends StatelessWidget {
                   expandedColor: Colors.red[50],
                   key: cardA,
                   leading: CircleAvatar(
-                      child: Image.asset("assets/image/avatar-1.png")),
+                      child: Image.asset("assets/image/general.jpg")),
                   title: Text("ما هو التعلم البطيئ"),
                   subtitle: Text("هو مرض نفسي ناتج عن .."),
                   children: <Widget>[

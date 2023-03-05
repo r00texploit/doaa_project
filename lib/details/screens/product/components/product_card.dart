@@ -67,9 +67,9 @@ class ProductCard extends StatelessWidget {
                   height: 130,
                   // image is square but we add extra 20 + 20 padding thats why width is 200
                   width: 150,
-                  child: Image.asset(
-                    "assets/image/avatar-1.png",
-                    // product!.image!,
+                  child: Image.network(
+                    // "assets/image/avatar-1.png",
+                    product!.image!,
                     fit: BoxFit.cover,
                   ),
                 ),

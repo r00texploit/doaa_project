@@ -66,7 +66,7 @@ class _ChatTrainingState extends State<ChatTraining> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
-            'Chat with \nyour Trainee',
+            'Chat',
             style: TextStyle(
                 fontSize: 28, fontWeight: FontWeight.bold, color: Colors.white),
           ),
@@ -113,7 +113,7 @@ class _ChatTrainingState extends State<ChatTraining> {
                       } else {
                         if (data.data!.docs.isEmpty) {
                           return const Center(
-                            child: Text('No A vailable requset',
+                            child: Text('No Available requset',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     color: Colors.white)),

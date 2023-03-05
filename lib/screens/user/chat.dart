@@ -174,7 +174,7 @@ class _ChatState extends State<Chat> {
             //   size: 60,
             //   Image: Image.network(avatar!,height: 80,width: 80,scale: 1),
             // ),
-            Image.network(avatar!, height: 80, width: 80, scale: 1),
+            Image.asset("assets/image/private_trainer.jpg", height: 80, width: 80, scale: 1),
             Expanded(
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,

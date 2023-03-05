@@ -89,21 +89,21 @@ class _UserPageState extends State<UserPage> {
               icon: const Icon(Icons.home),
               activeColor: Colors.white,
               inactiveColor: Colors.black,
-              activeBackgroundColor: Colors.red.shade300,
+              activeBackgroundColor:Color.fromARGB(255, 4, 72, 77),
             ),
             BottomNavBarItem(
               title: 'Center',
               icon: const Icon(Icons.person),
               activeColor: Colors.white,
               inactiveColor: Colors.black,
-              activeBackgroundColor: Colors.blue.shade300,
+              activeBackgroundColor: Color.fromARGB(255, 4, 72, 77),
             ),
             BottomNavBarItem(
               title: 'Message',
               icon: const Icon(Icons.chat_bubble),
               inactiveColor: Colors.black,
               activeColor: Colors.white,
-              activeBackgroundColor: Colors.green.shade300,
+              activeBackgroundColor: Color.fromARGB(255, 4, 72, 77),
             ),
             // BottomNavBarItem(
             //   title: 'Settings',
@@ -238,7 +238,7 @@ class ItemsUser extends StatelessWidget {
                       margin: const EdgeInsets.all(10),
                       height: 120,
                       width: 120,
-                      child: Image.asset("assets/image/avatar-1.png"),
+                      child: Image.asset("assets/image/autizim.jpg"),
                     ),
                   ),
                   Container(
@@ -278,7 +278,7 @@ class ItemsUser extends StatelessWidget {
                       margin: const EdgeInsets.all(10),
                       height: 120,
                       width: 120,
-                      child: Image.asset("assets/image/avatar-1.png"),
+                      child: Image.asset("assets/image/down.jpg"),
                     ),
                   ),
                   Container(
@@ -319,7 +319,7 @@ class ItemsUser extends StatelessWidget {
                       margin: const EdgeInsets.all(10),
                       height: 120,
                       width: 120,
-                      child: Image.asset("assets/image/avatar-1.png"),
+                      child: Image.asset("assets/image/slow_learner1.jpg"),
                     ),
                   ),
                   Container(
@@ -360,7 +360,7 @@ class ItemsUser extends StatelessWidget {
                       margin: const EdgeInsets.all(10),
                       height: 120,
                       width: 120,
-                      child: Image.asset("assets/image/avatar-1.png"),
+                      child: Image.asset("assets/image/general.jpg"),
                     ),
                   ),
                   Container(
