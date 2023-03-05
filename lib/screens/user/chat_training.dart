@@ -98,8 +98,8 @@ class _ChatTrainingState extends State<ChatTraining> {
                 child: StreamBuilder(
                     stream: FirebaseFirestore.instance
                         .collection("fliter")
-                        // .where("user2",
-                        //     isEqualTo: FirebaseAuth.instance.currentUser!.uid)
+                        .where("user2",
+                            isEqualTo: FirebaseAuth.instance.currentUser!.uid)
                         .limit(3)
                         .snapshots(),
                     builder: (context, AsyncSnapshot<QuerySnapshot> data) {
