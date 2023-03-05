@@ -111,8 +111,8 @@ class _ChatScreenState extends State<ChatScreen1> {
                     .collection("messages")
                     .doc(_auth.currentUser!.uid)
                     .collection("users")
-                    .where("receiver", isEqualTo: widget.uid)
-                    .where("sender", isEqualTo: _auth.currentUser!.email)
+                    // .where("receiver", isEqualTo: widget.uid)
+                    // .where("sender", isEqualTo: _auth.currentUser!.email)
                     .orderBy("time", descending: false)
                     .snapshots(),
                 builder: (context, snapshot) {
@@ -177,6 +177,12 @@ class _ChatScreenState extends State<ChatScreen1> {
                   TextButton(
                     onPressed: () {
                       log("message:$uid");
+                      FirebaseFirestore.instance.collection("fliter")
+                      .doc(widget.uid)
+                      .set({
+                        'user1': _auth.currentUser!.displayName,
+                        'user2': widget.name
+                      });
                       _firestore
                           .collection('chats')
                           .doc(widget.uid)

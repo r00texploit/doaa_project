@@ -118,8 +118,8 @@ class _ChatScreenState extends State<ChatScreen2> {
                     .collection("messages")
                     .doc(widget.uid)
                     .collection("users")
-                    .where("receiver", isEqualTo: widget.uid)
-                    .where("sender", isEqualTo: _auth.currentUser!.email)
+                    // .where("receiver", isEqualTo: widget.uid)
+                    // .where("sender", isEqualTo: signedInUser.email)
                     .orderBy("time", descending: false)
                     .snapshots(),
                 builder: (context, snapshot) {
@@ -133,7 +133,7 @@ class _ChatScreenState extends State<ChatScreen2> {
 
                   final messages = snapshot.data!.docs;
                   for (var message in messages) {
-                    final messageSender = widget.name; //message.get('sender');
+                    final messageSender = message.get('sender');
                     final messageText = message.get('text');
                     final currentUser = signedInUser.email;
                     final receiver = message.get("receiver");
@@ -195,7 +195,7 @@ class _ChatScreenState extends State<ChatScreen2> {
                         'receiver': widget.uid,
                         'text': messageController.text.trim(),
                         'time': FieldValue.serverTimestamp(),
-                        'isTrainer': true,
+                        //'isTrainer': true,
                       });
                       messageController.clear();
                     },

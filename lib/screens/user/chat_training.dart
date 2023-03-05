@@ -97,7 +97,10 @@ class _ChatTrainingState extends State<ChatTraining> {
                 padding: const EdgeInsets.all(20),
                 child: StreamBuilder(
                     stream: FirebaseFirestore.instance
-                        .collection("users")
+                        .collection("fliter")
+                        // .where("user2",
+                        //     isEqualTo: FirebaseAuth.instance.currentUser!.uid)
+                        .limit(3)
                         .snapshots(),
                     builder: (context, AsyncSnapshot<QuerySnapshot> data) {
                       if (!data.hasData) {
@@ -130,21 +133,34 @@ class _ChatTrainingState extends State<ChatTraining> {
                                 physics: const BouncingScrollPhysics(),
                                 itemCount: data.data!.docs.length,
                                 itemBuilder: (BuildContext context, int index) {
-                                  // return StreamBuilder<QuerySnapshot>(
-                                  //     stream: FirebaseFirestore.instance
-                                  //         .collection("users")
-                                  //         .snapshots(),
-                                  //     builder: ((context, snapshot) {
-                                  // return Text("");
-                                  return _itemChats(
-                                    email: data.data!.docs[index]['email'],
-                                    name: data.data!.docs[index]['name'],
-                                    userid: data.data!.docs[index]['uid'],
-                                    tel: data.data!.docs[index]['number'],
-                                  );
-                                  // }
-                                  // )
-                                  // );
+                                  var uid = data.data!.docs[index]["user1"];
+                                  d.log("fliter index:${index}");
+
+                                  d.log("fliter uid $index:${uid}");
+
+                                  return StreamBuilder<QuerySnapshot>(
+                                      stream: FirebaseFirestore.instance
+                                          .collection("users")
+                                          .where("uid", isEqualTo: uid)
+                                          .limit(3)
+                                          .snapshots(),
+                                      builder: ((context,
+                                          AsyncSnapshot<QuerySnapshot>
+                                              snapshot) {
+                                        d.log(
+                                            "fliter user:${snapshot.data!.docs[index].data()}");
+
+                                        return _itemChats(
+                                          email: snapshot.data!.docs[index]
+                                              ['email'],
+                                          name: snapshot.data!.docs[index]
+                                              ['name'],
+                                          userid: snapshot.data!.docs[index]
+                                              ['uid'],
+                                          tel: snapshot.data!.docs[index]
+                                              ['number'],
+                                        );
+                                      }));
                                 }),
                           );
                         }
